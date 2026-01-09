@@ -999,7 +999,7 @@ a.btn{
 #contact form textarea:focus {
     border-color: #302725;
     box-shadow: 0 0 8px rgba(48, 39, 37, 0.3);
-    transform: scale(1.02);
+   
 }
 
 /* Textarea */
@@ -1035,10 +1035,33 @@ a.btn{
 
 /* Responsive */
 @media (max-width: 768px) {
+    #contact {
+        padding: 60px 15px;
+    }
+
+    #contact .section-header h2 {
+        font-size: 30px;
+    }
+
     #contact form {
-        padding: 0 10px;
+        padding: 0;
+        gap: 16px;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        font-size: 15px;
+        padding: 14px 16px;
+    }
+
+    #contact form button {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 30px;
     }
 }
+
 
 
 
@@ -1232,21 +1255,38 @@ a.btn{
     color: #414141;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
+    .footer {
+        text-align: center;
+        padding: 30px 15px;
+    }
+
     .footer .footer-info h2 {
-        margin-bottom: 20px;
         font-size: 20px;
-        font-weight: 600;
+        margin-bottom: 12px;
     }
 
     .footer .footer-info h3 {
-        margin-bottom: 20px;
-        font-size: 16px;
+        font-size: 15px;
+        margin-bottom: 16px;
     }
 
     .footer .footer-menu p {
-        font-size: 16px;
-        line-height: 16px;
-        padding: 0 5px;
+        font-size: 15px;
+        line-height: 22px; /* FIXED */
+        padding: 0;
+    }
+
+    .footer .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .footer .social-links {
+        justify-content: center;
+        margin-top: 15px;
     }
 }
+
